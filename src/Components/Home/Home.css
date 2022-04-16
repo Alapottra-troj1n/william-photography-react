@@ -1,0 +1,23 @@
+.__hero-section{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(19, 19, 19, 0.368), rgba(29, 29, 29, 0.391)), url('https://i.ibb.co/PQV26SX/pexels-kaique-rocha-97900-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+.__hero-content{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.__tagline h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.__tagline p{
+    text-align: center;
+    font-size: 1.4rem;
+}
