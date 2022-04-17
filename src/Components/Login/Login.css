@@ -1,0 +1,22 @@
+.__login-wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  
+}
+.__login-form-container{
+    background-color: #F0FAFE; 
+    padding: 10rem !important; 
+    
+}
+.__google-signin-btn{
+    border: none;
+    padding: 10px 80px;
+    font-weight: 600;
+    border: 1px solid rgb(216, 216, 216);
+}
+.__google-brand{
+    width: 20px;
+    margin-left: 5px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Connect from '../Connect/Connect';
 import Header from '../Navbar/Header';
 import Services from '../Services/Services';
 import './Home.css'
@@ -19,7 +20,10 @@ const Home = () => {
          </div>
         </div>
         <Services/>
+        <Connect/>
 
+
+        
         </>
     );
 };

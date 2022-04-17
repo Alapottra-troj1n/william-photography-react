@@ -5,13 +5,23 @@
     text-align: center;
     color: rgb(255, 255, 255) !important;
     transition: 200ms ease-in-out;
+  
 
 }
+.__nav-link-btn{
+    text-decoration: none !important;
+    color:white !important;
+    font-weight: 500 !important;
+}
+
 .__nav-link:hover{
    
     color: #73dbf5 !important;
 
 
+}
+.__nav-link-btn:hover{
+    color: #73dbf5 !important;
 }
 
 .__header-container{
