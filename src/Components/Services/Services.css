@@ -1,0 +1,16 @@
+.__services-container{
+    margin: 50px 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3,1fr);
+}
+.service-title{
+    font-family: 'Playfair Display SC', serif;
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:rgb(80, 80, 80);
+    letter-spacing: 3px;
+
+}

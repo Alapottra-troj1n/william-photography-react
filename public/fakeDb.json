@@ -1,0 +1,27 @@
+[
+  {
+    "image": "https://i.ibb.co/hsPbbP3/Mask-group-2-2.png",
+    "name": "Wedding Photography",
+    "des": "I will capture the moments of your big day that will last a lifetime, Determined to capture every joyful moment of your wedding and bring the warmth of love and passion",
+    "price": 2000,
+    "slug": "wedding",
+    "id": 11
+  },
+  {
+    "image": "https://i.ibb.co/H2msp6S/Mask-group-1-1.png",
+    "name": "Product Photography",
+    "des": "My creative captures will bring life to your product. I will combine props, textured surfaces, dramatic lighting, a mix of all four to create small customized settings with big visual impact.",
+    "slug": "product",
+    "price": 1200,
+    "id": 22
+  },
+  {
+    "image": "https://i.ibb.co/3mzSqWz/Mask-group-3.png",
+    "name": "Urban Photography",
+    "slug": "urban",
+    "des": "The marvels of daily life are exciting; no movie director can arrange the unexpected that you find in the street.",
+    "price": 1000,
+    "id": 33
+  }
+  
+]

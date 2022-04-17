@@ -8,12 +8,12 @@ const Header = () => {
     <>
      <Navbar collapseOnSelect expand="lg" variant="dark" className="__header-container">
   <Container>
-  <Navbar.Brand href="#home" className="__logo">William P.</Navbar.Brand>
+  <Navbar.Brand href="/" className="__logo">William P.</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
       <Link className="__nav-link" to='/'>Home</Link>
-      <Link className="__nav-link" to='#services'>Services</Link>
+      <a href="#services" className='__nav-link'>Services</a>
       <Link className="__nav-link" to='/login'>Login</Link>
       <Link className="__nav-link" to='/blog'>Blog</Link>
     </Nav>
