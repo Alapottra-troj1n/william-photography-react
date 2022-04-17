@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './ServiceCard.css'
 
 const ServiceCard = ({service}) => {
-    console.log(service);
     return (
         <div className='__card-container' >
             <div className="__img-container">

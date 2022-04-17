@@ -3,10 +3,10 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({bg}) => {
   return (
     <>
-     <Navbar collapseOnSelect expand="lg" variant="dark" className="__header-container">
+     <Navbar collapseOnSelect expand="lg" variant="dark" bg={bg} className="__header-container">
   <Container>
   <Navbar.Brand href="/" className="__logo">William P.</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />

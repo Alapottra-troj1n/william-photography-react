@@ -1,0 +1,27 @@
+.__footer-container{
+    background-color: rgb(38, 38, 38);
+    padding: 3rem 0;
+}
+.__footer-logo h2{
+    font-family: 'Cinzel Decorative';
+    color: white;
+    text-align: center;
+}
+.__footer-logo{
+    border-bottom: 1px solid white;
+    
+}
+.__footer-links{
+    text-align: center;
+    margin-top: 10px;
+}
+.__footer-link{
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+}
+.__footer-link:hover{
+   color:  #73dbf5;
+   transition: 200ms ease-in-out;
+}
