@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './Components/Navbar/Header';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
+import CheckoutPage from './Components/CheckoutPage/CheckoutPage';
 
 
 
@@ -21,6 +22,7 @@ function App() {
        <Route path='/' element={<Home/>}></Route>
        <Route path='/login' element={<Login/>}></Route>
        <Route path='/signup' element={<SignUp/>}></Route>
+       <Route path='/service/:service' element={<CheckoutPage/>}></Route>
 
      </Routes>
      <Footer/>
