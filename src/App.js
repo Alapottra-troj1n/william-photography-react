@@ -9,6 +9,7 @@ import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import CheckoutPage from './Components/CheckoutPage/CheckoutPage';
 import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
+import Blog from './Components/Blog/Blog';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       {currentLocation.pathname === '/' ? '' : <Header bg={'dark'}/>}
      <Routes>
        <Route path='/' element={<Home/>}></Route>
+       <Route path='/blog' element={<Blog/>}></Route>
        <Route path='/login' element={<Login/>}></Route>
        <Route path='/signup' element={<SignUp/>}></Route>
        <Route path='/service/:service' element={<RequiredAuth><CheckoutPage/></RequiredAuth>}></Route>
