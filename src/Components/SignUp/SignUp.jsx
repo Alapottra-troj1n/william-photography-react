@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useNavigate } from "react-router-dom";
 import { useSendEmailVerification } from 'react-firebase-hooks/auth';
+import './SignUp.css'
 
 
 
@@ -61,8 +62,8 @@ const SignUp = () => {
 
     return (
         <div>
-             <div className="my-5 __login-wrapper">
-        <div className="__login-form-container container mx-auto w-50">
+             <div className=" __register-wrapper ">
+        <div className="__login-form-container container mx-auto w-100">
         <h2 className="text-center fw-bold fs-1 mb-4">Register</h2>
         <Form onSubmit={handleSignUp}>
         <Form.Group className="mb-3" >
@@ -89,7 +90,7 @@ const SignUp = () => {
         </Form.Group>
         {loading ? <p className="text-success">loading...</p> : ''}
         <p className="text-danger">{passError || error?.message}</p>
-      <div className="__login-btn-container d-flex flex-row align-items-center">
+      <div className="__login-btn-container d-flex flex-column md:flex-row align-items-center">
       <input type='submit' className="__book-btn px-4 py-2" disabled={terms ? true : ''} value='Register' />
        <p className='mt-3 ps-2 fs-6'>Already have an account ? <Link to='/login' className="text-info">Log in</Link></p>
       </div>

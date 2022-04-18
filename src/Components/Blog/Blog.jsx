@@ -4,7 +4,7 @@ import "./Blog.css";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="__blog-container">
         <h2 className="text-center fs-1 fw-bold my-5">Blog Post Q/A </h2>
       <div className="container my-5">
         <Accordion defaultActiveKey="0">

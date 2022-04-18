@@ -1,1 +1,18 @@
+.__register-wrapper{
+        
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 7rem !important;
+    margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+    .__register-wrapper{
+    
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+      
+    }
+ 
 
+}

@@ -10,6 +10,7 @@ import SignUp from './Components/SignUp/SignUp';
 import CheckoutPage from './Components/CheckoutPage/CheckoutPage';
 import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
 import Blog from './Components/Blog/Blog';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 
@@ -26,6 +27,7 @@ function App() {
        <Route path='/login' element={<Login/>}></Route>
        <Route path='/signup' element={<SignUp/>}></Route>
        <Route path='/service/:service' element={<RequiredAuth><CheckoutPage/></RequiredAuth>}></Route>
+       <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
 
      </Routes>
      <Footer/>

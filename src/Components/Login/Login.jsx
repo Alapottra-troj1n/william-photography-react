@@ -67,9 +67,9 @@ const Login = () => {
   }
 
   return (
-    <div className="my-5 __login-wrapper">
+    <div className=" __login-wrapper">
       <ToastContainer />
-        <div className="__login-form-container container mx-auto w-50">
+        <div className="__login-form-container container mx-auto w-100">
 
         <h2 className="text-center fw-bold fs-1 mb-4">Login</h2>
        {from !== '/' ? <p className="text-center text-danger">Please Login First</p> : ''} 
@@ -90,7 +90,7 @@ const Login = () => {
         {loading ? <p className="text-success">loading...</p> : ''}
         {error ? <p className='text-danger'>{error.message}</p> : ''}
         {googleError ? <p className='text-danger'>{googleError.message}</p> : ''}
-      <div className="__login-btn-container d-flex flex-row align-items-center">
+      <div className="__login-btn-container d-flex flex-column md:flex-row align-items-center">
       <input value='Login' type="Submit" className="__book-btn px-4 py-2" />
        <p className='mt-3 ps-2 fs-6'>New to me ? <Link to='/signup' className="text-info">Create a new account</Link></p>
       </div>

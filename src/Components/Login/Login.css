@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
   
 }
 .__login-form-container{
@@ -25,4 +27,28 @@
     border: 1px solid rgb(157, 157, 157);
     cursor: pointer;
     font-size: .9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .__login-wrapper{
+    
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+      
+    }
+    .__login-form-container{
+        
+        padding: 0;
+        width: 100% !important;
+      
+        
+    }
+    .__google-signin-btn{
+        padding: 5px 50px;
+        white-space: nowrap;
+        font-weight: 600;
+        border: 1px solid rgb(216, 216, 216);
+    }
+    
+
 }
