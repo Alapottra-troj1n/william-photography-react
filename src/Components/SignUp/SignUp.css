@@ -3,14 +3,14 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-top: 7rem !important;
+    margin-top: 3rem !important;
     margin-bottom: 3rem;
 }
 @media screen and (max-width: 768px) {
     .__register-wrapper{
     
-        margin-top: 0rem;
-        margin-bottom: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       
     }
  
