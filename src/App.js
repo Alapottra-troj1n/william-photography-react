@@ -13,7 +13,6 @@ import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   const currentLocation = useLocation();
-  console.log(currentLocation);
   return (
    
     <div className="App">

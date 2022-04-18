@@ -34,6 +34,26 @@
     font-family: 'Cinzel Decorative';
     color: rgb(255, 255, 255) !important;
 }
+.__welcome-back{
+    display: flex;
+    justify-content: flex-end;
+}
+.__current-user-username{
+    cursor: pointer;
+}
+.__logout-btn{
+    margin: 10px 10px ;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #48cae4;
+    color:white;
+    border: none;
+
+}
+.__logout-btn:hover{
+    background-color: #3da7bc;
+}
 
 @media  (max-width: 768px) {
     .__header-container{
