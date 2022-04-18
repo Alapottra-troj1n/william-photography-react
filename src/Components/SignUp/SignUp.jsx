@@ -63,7 +63,7 @@ const SignUp = () => {
     return (
         <div>
              <div className=" __register-wrapper ">
-        <div className="__login-form-container container mx-auto w-100">
+        <div className="__login-form-container container mx-auto ">
         <h2 className="text-center fw-bold fs-1 mb-4">Register</h2>
         <Form onSubmit={handleSignUp}>
         <Form.Group className="mb-3" >

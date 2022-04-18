@@ -69,7 +69,7 @@ const Login = () => {
   return (
     <div className=" __login-wrapper">
       <ToastContainer />
-        <div className="__login-form-container container mx-auto w-100">
+        <div className="__login-form-container container mx-auto ">
 
         <h2 className="text-center fw-bold fs-1 mb-4">Login</h2>
        {from !== '/' ? <p className="text-center text-danger">Please Login First</p> : ''} 
@@ -98,8 +98,8 @@ const Login = () => {
       <button className="reset-pass-btn"onClick={handlePasswordReset}>reset password</button>
       </Form>
 
-        <div className="social-login mt-5 text-center">
-            <button className="__google-signin-btn" onClick={()=> signInWithGoogle()}> Sign In with Google <Google className="__google-brand" /> </button> 
+        <div className="social-login mt-5 text-center d-flex flex-column">
+            <button className="__google-signin-btn " onClick={()=> signInWithGoogle()}> Sign In with Google <Google className="__google-brand" /> </button> 
         </div>
         </div>
         <img src="../../assets/google-brands.svg" alt="" />
