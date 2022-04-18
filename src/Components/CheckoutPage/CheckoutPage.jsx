@@ -8,11 +8,10 @@ const CheckoutPage = () => {
 
     return (
         <div className='my-5 container w-50 __checkout-container'>
-        
+            <h2 className='text-center my-5 fs-1 fw-bold'>Checkout Page</h2>
 
 
         <Form>
-
                 <Form.Group className="mb-3" >
                 <Form.Control type="email" required placeholder="Email Address" />
                 </Form.Group>

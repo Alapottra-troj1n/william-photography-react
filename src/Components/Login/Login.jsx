@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ReactComponent as Google } from '../../assets/google-brands.svg';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -24,9 +24,14 @@ const Login = () => {
   const loginEmail = useRef(null);
   const loginPassword = useRef(null);
   const navigate = useNavigate();
+  let location = useLocation();
 
+  //reset password
 
   const [sendPasswordResetEmail, resetSending, resetError] = useSendPasswordResetEmail(auth);
+
+  //requiredAuth functionalities
+  let from = location.state?.from?.pathname || "/";
 
 
 
@@ -38,6 +43,7 @@ const Login = () => {
   const handleLogin = async(e) => {
     e.preventDefault();
     await signInWithEmailAndPassword(loginEmail.current.value, loginPassword.current.value);
+    
   
 
   }
@@ -57,7 +63,7 @@ const Login = () => {
 
 
   if(user){
-    navigate('/')
+    navigate(from, { replace: true });
   }
 
   return (
@@ -66,6 +72,7 @@ const Login = () => {
         <div className="__login-form-container container mx-auto w-50">
 
         <h2 className="text-center fw-bold fs-1 mb-4">Login</h2>
+       {from !== '/' ? <p className="text-center text-danger">Please Login First</p> : ''} 
         <Form onSubmit={handleLogin}>
         <Form.Group className="mb-3">
           <Form.Control type="email" required placeholder="Enter Email" ref={loginEmail} />

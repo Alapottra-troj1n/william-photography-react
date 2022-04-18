@@ -46,15 +46,16 @@ const SignUp = () => {
           await createUserWithEmailAndPassword(signupEmail.current.value, signupPassword.current.value);
           await updateProfile({displayName: signupUsername.current.value});
           await sendEmailVerification();
-          alert('verification sent')
-           
           
-
         }
         
         
         
 
+    }
+    if(user){
+      navigate('/');
+     
     }
     
 
