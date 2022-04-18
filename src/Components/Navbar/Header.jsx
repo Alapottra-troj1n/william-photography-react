@@ -28,6 +28,7 @@ const Header = ({bg}) => {
       }}>Services</button> */}
 
        <Link className="__nav-link" to='/blog'>Blog</Link>
+       <Link className="__nav-link" to='/about'>About</Link>
       {user  ? <button className='__logout-btn' onClick={()=> signOut(auth)}>Logout</button> : <Link className="__nav-link" to='/login'>Login</Link>}
     </Nav>
   </Navbar.Collapse>
